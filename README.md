@@ -5,9 +5,11 @@
 * [NGINX](https://hub.docker.com/_/nginx) (alpine)
 * [MySQL 5.7](https://hub.docker.com/_/mysql)
 * [PHP 7.4.3](https://hub.docker.com/_/php)
+* [Composer](https://hub.docker.com/_/composer)
+* [Laravel 7.x](https://laravel.com/docs/7.x)
 * PHP Packages
-    * [Laravel](https://laravel.com/docs/7.x)
-    * [Composer](https://hub.docker.com/_/composer)
+    * [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
+    * [barryvdh/laravel-ide-helper](https://packagist.org/packages/barryvdh/laravel-ide-helper)
 
 #### Configuration
 
@@ -18,6 +20,7 @@
     ```
 
 2. Add `APP_USER` variable:
+
     ```ini
     APP_USER=serge
     ```
@@ -44,9 +47,14 @@
     ```bash
     docker-compose up
     ```
-   
-6. Add site domain to `/etc/hosts` file (Linux):
+6. Install `Composer` vendors:
 
-```text
-127.0.0.1 local-app.com
-```
+    ```bash
+    docker-compose exec app-php composer install
+    ```
+
+7. Add site domain to `/etc/hosts` file (Linux):
+
+    ```text
+    127.0.0.1 local-app.com
+    ```
