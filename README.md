@@ -57,5 +57,5 @@
 7. Add site domain to `/etc/hosts` file (Linux):
 
     ```text
-    127.0.0.1 local-app.dev
+    127.0.0.1 local-app.test
     ```
