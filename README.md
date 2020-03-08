@@ -10,6 +10,7 @@
 * PHP Packages
     * [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
     * [barryvdh/laravel-ide-helper](https://packagist.org/packages/barryvdh/laravel-ide-helper)
+    * [nunomaduro/larastan](https://packagist.org/packages/nunomaduro/larastan)
 
 #### Configuration
 
@@ -56,5 +57,5 @@
 7. Add site domain to `/etc/hosts` file (Linux):
 
     ```text
-    127.0.0.1 local-app.com
+    127.0.0.1 local-app.dev
     ```

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "943fde2497e0e825df63202dc1b621dd",
+    "content-hash": "e49203033f9e3ab7d6d92763deccf890",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4884,6 +4884,78 @@
             "time": "2020-03-07T12:46:00+00:00"
         },
         {
+            "name": "nunomaduro/larastan",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nunomaduro/larastan.git",
+                "reference": "a4cc1d5861123ea4c6b5c966a092063fb70a144b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nunomaduro/larastan/zipball/a4cc1d5861123ea4c6b5c966a092063fb70a144b",
+                "reference": "a4cc1d5861123ea4c6b5c966a092063fb70a144b",
+                "shasum": ""
+            },
+            "require": {
+                "composer/composer": "^1.0",
+                "ext-json": "*",
+                "illuminate/console": "^6.0 || ^7.0",
+                "illuminate/container": "^6.0 || ^7.0",
+                "illuminate/contracts": "^6.0 || ^7.0",
+                "illuminate/database": "^6.0 || ^7.0",
+                "illuminate/http": "^6.0 || ^7.0",
+                "illuminate/pipeline": "^6.0 || ^7.0",
+                "illuminate/support": "^6.0 || ^7.0",
+                "mockery/mockery": "^0.9 || ^1.0",
+                "php": "^7.2",
+                "phpstan/phpstan": "^0.12",
+                "symfony/process": "^4.3 || ^5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0 || ^5.0",
+                "phpunit/phpunit": "^7.3 || ^8.2"
+            },
+            "suggest": {
+                "orchestra/testbench": "^4.0 || ^5.0"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NunoMaduro\\Larastan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "Larastan - Discover bugs in your code without running it. A phpstan/phpstan wrapper for Laravel",
+            "keywords": [
+                "PHPStan",
+                "code analyse",
+                "code analysis",
+                "larastan",
+                "laravel",
+                "package",
+                "php",
+                "static analysis"
+            ],
+            "time": "2020-02-10T12:49:03+00:00"
+        },
+        {
             "name": "phar-io/manifest",
             "version": "1.0.3",
             "source": {
@@ -5198,6 +5270,45 @@
                 "stub"
             ],
             "time": "2020-03-05T15:02:03+00:00"
+        },
+        {
+            "name": "phpstan/phpstan",
+            "version": "0.12.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "37bdd26a80235d0f9045b49f4151102b7831cbe2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/37bdd26a80235d0f9045b49f4151102b7831cbe2",
+                "reference": "37bdd26a80235d0f9045b49f4151102b7831cbe2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "time": "2020-03-02T22:29:43+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
