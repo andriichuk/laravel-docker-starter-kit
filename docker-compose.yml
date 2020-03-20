@@ -43,6 +43,18 @@ services:
     networks:
       - app-network
 
+  app-nodejs:
+    image: node:13-alpine
+    container_name: app-nodejs
+    restart: unless-stopped
+    working_dir: /var/www/
+    command: sh -c "npm install && npm run watch"
+    volumes:
+      - ./:/var/www
+      - ./node_modules:/var/www/node_modules
+    networks:
+      - app-network
+
 networks:
   app-network:
     driver: bridge
