@@ -6,7 +6,7 @@
 * [MySQL 5.7](https://hub.docker.com/_/mysql)
 * [PHP 7.4.3](https://hub.docker.com/_/php)
 * [Composer](https://hub.docker.com/_/composer)
-* [Laravel 7.x](https://laravel.com/docs/7.x)
+* [Laravel 7.*](https://laravel.com/docs/7.x)
 * PHP Packages
     * [barryvdh/laravel-debugbar](https://packagist.org/packages/barryvdh/laravel-debugbar)
     * [barryvdh/laravel-ide-helper](https://packagist.org/packages/barryvdh/laravel-ide-helper)
