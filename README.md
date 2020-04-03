@@ -1,4 +1,4 @@
-### Laravel Docker Local Environment
+### Laravel Docker Starter Kit
 
 #### Services
 
